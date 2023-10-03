@@ -39,12 +39,12 @@
     <main class="bg-[#F8F8F8]">
         <section class="flex justify-center gap-6 pt-32 pb-32">
             <div>
-                <!-- 1st row 1st card-->
+
                 <div class="pb-14">
                     <h1 class="text-2xl font-semibold">Kitchenware</h1>
                     <div class="flex gap-6 mt-8">
                         <!--1st row 1st card -->
-                        <div class="shop-item bg-white card p-5">
+                        <div id="card-01" class=" bg-white card p-5">
                             <div class="bg-[#0D111111]">
                                 <figure><img src="/images/prod1.png" alt="Shoes" /></figure>
                             </div>
@@ -59,12 +59,13 @@
                                 </div>
                                 <div class="text-center">
                                     <h2 class="text-xl font-semibold">K.Accessories</h2>
-                                    <p class="text-xl font-normal text-gray-500"><span>39.00</span>TK</p>
+                                    <p class="text-xl font-normal text-gray-500"><span id="card-01-price">39.00</span>TK
+                                    </p>
                                 </div>
                             </div>
                         </div>
                         <!--1st row 2nd card -->
-                        <div class="shop-item bg-white card p-5">
+                        <div id="card-02" class=" bg-white card p-5">
                             <div class="bg-[#0D111111]">
                                 <figure><img src="/images/prod2.png" alt="Shoes" /></figure>
                             </div>
@@ -79,13 +80,14 @@
                                 </div>
                                 <div class="text-center">
                                     <h2 class="text-xl font-semibold">K.Accessories</h2>
-                                    <p class="text-xl font-normal text-gray-500"><span>25.00</span>TK</p>
+                                    <p class="text-xl font-normal text-gray-500"><span id="card-02-price">25.00</span>TK
+                                    </p>
                                 </div>
 
                             </div>
                         </div>
                         <!-- 1st row 3rd card -->
-                        <div class="shop-item bg-white card p-5">
+                        <div id="card-03" class=" bg-white card p-5">
                             <div class="bg-[#0D111111]">
                                 <figure><img src="/images/prod3.png" alt="Shoes" /></figure>
                             </div>
@@ -100,7 +102,8 @@
                                 </div>
                                 <div class="text-center">
                                     <h2 class="text-xl font-semibold">Home Cooker</h2>
-                                    <p class="text-xl font-normal text-gray-500"><span>49.00</span>TK</p>
+                                    <p class="text-xl font-normal text-gray-500"><span id="card-03-price">49.00</span>TK
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -111,9 +114,9 @@
                     <h1 class="text-2xl font-semibold">Sportswear</h1>
                     <div class="flex gap-6 mt-8">
                         <!--2nd row 1st card -->
-                        <div class="shop-item bg-white card p-5">
+                        <div id="card-04" class=" bg-white card p-5">
                             <div class="bg-[#0D111111] ">
-                                <figure><img src="/images/prod4.png" alt="Shoes"/></figure>
+                                <figure><img src="/images/prod4.png" alt="Shoes" /></figure>
                             </div>
                             <div class="card-body items-center">
                                 <div class="rating">
@@ -126,12 +129,13 @@
                                 </div>
                                 <div class="text-center">
                                     <h2 class="text-xl font-semibold">Sports Back Cap</h2>
-                                    <p class="text-xl font-normal text-gray-500"><span>49.00</span>TK</p>
+                                    <p class="text-xl font-normal text-gray-500"><span id="card-04-price">49.00</span>TK
+                                    </p>
                                 </div>
                             </div>
                         </div>
                         <!--1st row 2nd card -->
-                        <div class="shop-item bg-white card p-5">
+                        <div id="card-05" class=" bg-white card p-5">
                             <div class="bg-[#0D111111]">
                                 <figure><img src="/images/prod5.png" alt="Shoes" /></figure>
                             </div>
@@ -146,13 +150,14 @@
                                 </div>
                                 <div class="text-center">
                                     <h2 class="text-xl font-semibold">Full jersey Set</h2>
-                                    <p class="text-xl font-normal text-gray-500"><span>69.00</span>TK</p>
+                                    <p class="text-xl font-normal text-gray-500"><span id="card-05-price">69.00</span>TK
+                                    </p>
                                 </div>
 
                             </div>
                         </div>
-                        <!-- 1st row 3rd card -->
-                        <div class="shop-item bg-white card p-5">
+                        <!-- 2nd row 3rd card -->
+                        <div id="card-06" class=" bg-white card p-5">
                             <div class="bg-[#0D111111]">
                                 <figure><img src="/images/prod6.png" alt="Shoes" /></figure>
                             </div>
@@ -167,44 +172,53 @@
                                 </div>
                                 <div class="text-center">
                                     <h2 class="text-xl font-semibold">Sports cates</h2>
-                                    <p class="text-xl font-normal text-gray-500"><span>159.00</span>TK</p>
+                                    <p class="text-xl font-normal text-gray-500"><span
+                                            id="card-06-price">159.00</span>TK</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
             <div>
                 <div class="bg-white p-6 mt-16">
                     <h1 class="text-2xl font-medium">Have coupon?</h1>
                     <div class="flex items-center ">
                         <input type="text" placeholder="Type here"
                             class="input input-bordered input-md w-full max-w-xs" />
-                        <button class="btn btn-secondary text-white btn-disabled">Apply</button>
+                        <button id="apply-btn" class="btn btn-secondary text-white btn-disabled">Apply</button>
                     </div>
                 </div>
+                <!-- item list -->
+                <div id="shopping-cart">
+
+                </div>
+
                 <div class="bg-white p-6 mt-8">
                     <div>
                         <div class="flex">
                             <h4 class="text-black text-2xl font-medium">Total Price: &nbsp;</h4>
-                            <p class="text-gray-400 text-2xl font-medium"><span>0.00</span>TK</p>
+                            <p class="text-gray-400 text-2xl font-medium"><span id="total-price">0.00</span>TK</p>
                         </div>
                         <div class="flex">
                             <h4 class="text-black text-2xl font-medium">Discount: &nbsp;</h4>
-                            <p class="text-gray-400 text-2xl font-medium"> <span>0.00</span>TK</p>
+                            <p class="text-gray-400 text-2xl font-medium"> <span id="discount">0.00</span>TK</p>
                         </div>
                         <div class="flex mb-6">
                             <h4 class="text-black text-2xl font-medium">Total: &nbsp;</h4>
-                            <p class="text-gray-400 text-2xl font-medium"> <span>0.00</span>TK</p>
+                            <p id="total" class="text-gray-400 text-2xl font-medium"> <span>0.00</span>TK</p>
                         </div>
                     </div>
                     <div>
-                        <button class="btn btn-secondary w-full text-white btn-disabled">Make Purchase</button>
+                        <button id="purchase-btn" class="btn btn-secondary w-full text-white btn-disabled">Make
+                            Purchase</button>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    <script src="js/utils.js"></script>
     <script src="js/sell.js"></script>
 </body>
 
