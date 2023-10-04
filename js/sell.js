@@ -5,14 +5,12 @@ function handleClick(cardNumber) {
     const cardId = `card-0${cardNumber}`;
     const priceId = `${cardId}-price`;
 
-
     document.getElementById(cardId).addEventListener('click', function () {
         //    adding item into the cart        
         const element = document.getElementById("shopping-cart");
         const li = document.createElement("li");
         li.classList.add("font-medium", "text-2xl", "text-black");
         const h2Element = document.getElementById(cardId).getElementsByTagName("h2")[0];
-        console.log(h2Element);
         li.textContent = h2Element.innerText;
         element.appendChild(li);
 
@@ -53,3 +51,18 @@ function handleClick(cardNumber) {
 for (let i = 1; i <= 6; i++) {
     handleClick(i);
 }
+
+
+document.getElementById('purchase-btn').addEventListener('click', function () {
+    my_modal_1.showModal();
+})
+
+document.getElementById('goHome-btn').addEventListener('click', function () {
+    setTextElementById('total-price', '0.00');
+    setTextElementById('total', '0.00');
+    setTextElementById('discount', '0.00');
+    const purchaseBtn = document.getElementById('purchase-btn');
+    purchaseBtn.classList.add('btn-disabled');
+    var olElement = document.getElementById("shopping-cart");
+    olElement.innerHTML = '';
+})
